@@ -1,0 +1,59 @@
+<mat-card>
+<div *ngIf="auth.user | async; then authenticated else guest">
+
+</div>
+
+
+<ng-template #guest>
+  <h3>Welcome, Guest</h3>
+  <!-- <p>Login is currently disabled:</p>
+   <p>navigate to the dashboard for features...</p> -->
+
+  <p>Login to get started...</p>
+
+
+    <div class="primaryBtnBox">
+      <button class="primaryBtn" color="primary" mat-raised-button (click)="auth.facebookLogin()">
+        <i class="fa fa-facebook-square"></i>
+        <span>Connect Facebook</span>
+      </button>
+    </div>
+    <div class="secondaryBtnBox">
+      <button class="primaryBtn" color="primary" mat-raised-button (click)="auth.googleLogin()">
+        <i class="fa fa-google"></i>
+        <span>Connect Google</span>
+      </button>
+    </div>
+    <!-- <button (click)="auth.emailLogin()">
+        <i class="fas fa-envelope"></i>Connect Email
+    </button> -->
+
+</ng-template>
+
+<ng-template #authenticated>
+  <mat-toolbar>
+      <button mat-button routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
+  </mat-toolbar>
+
+
+</ng-template>
+
+
+
+<!-- <mat-card>
+  <mat-card-header>
+    <h2 class="text">Login</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field>
+      <input matInput placeholder="Input">
+    </mat-form-field>
+    <button mat-button>Create Profile</button>
+
+    <button mat-button (click)="console.log('foo')">Dashboard</button>
+  </mat-card-content>
+</mat-card>
+
+<br><br> -->
+
+</mat-card>

@@ -1,0 +1,18 @@
+<mat-card class="details-container" *ngIf="activeCharacter">
+  <mat-card-content>
+    <div>
+      <h2>{{activeCharacter.name}}</h2>
+      <p><span style="font-weight: bold">Gender:</span> {{activeCharacter.gender}}</p>
+      <p><span style="font-weight: bold">Appearance:</span> {{activeCharacter.appearance}}</p>
+      <p><span style="font-weight: bold">Bio:</span> {{activeCharacter.bio}}</p>
+      <button mat-raised-button class="primaryBtn" color="primary" (click)="openInventory()">Inventory</button>
+
+    </div>
+    <div class="buttons">
+      <!--<button mat-raised-button color="warn" (click)="back()">Back</button>-->
+      <button mat-raised-button (click)="killCharacter(activeCharacter.id)">Kill This Character</button>
+    </div>
+  </mat-card-content>
+</mat-card>
+<br>
+

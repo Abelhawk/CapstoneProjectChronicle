@@ -1,0 +1,22 @@
+.primaryBtn{
+  margin-bottom: 4px;
+  background-color: #3e3b6c;
+}
+.secondaryBtn {
+  margin-top: 4px;
+}
+
+.primaryBtnBox {
+  display: flex;
+  justify-content: center;
+
+}
+.secondaryBtnBox {
+  display: flex;
+  justify-content: center;
+
+}
+mat-card{
+  background-color: lightgray;
+  margin: 8px;
+}

@@ -1,0 +1,30 @@
+mat-card{
+  background-color: lightgray;
+  margin: 8px;
+}
+
+
+.primaryBtn{
+  margin-bottom: 4px;
+  width: 90%;
+  background-color: #3e3b6c;
+}
+.secondaryBtn {
+  margin-top: 4px;
+  width: 90%;
+}
+
+.primaryBtnBox {
+  display: flex;
+  justify-content: center;
+
+}
+.secondaryBtnBox {
+  display: flex;
+  justify-content: center;
+
+}
+
+i {
+  margin: 4px;
+}

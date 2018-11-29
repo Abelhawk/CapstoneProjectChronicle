@@ -1,0 +1,85 @@
+
+body{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  color:#fff;
+  font-family: 'Arial';
+}
+
+.text{
+  color: #000000;
+  align-content: center;
+  width: 100%;
+}
+
+.buttonText{
+  color: #000000;
+  text-align: center;
+  width: 100%;
+
+
+}
+
+mat-toolbar{
+  background-color: #3e3b6c;
+  color: #fff;
+}
+mat-card{
+  background-color: lightgray;
+  margin: 8px;
+  height: 100%;
+}
+
+
+.primaryBtn{
+  margin-bottom: 4px;
+  width: 90%;
+  background-color: #3e3b6c;
+}
+.secondaryBtn {
+  margin-top: 4px;
+  width: 90%;
+}
+
+.primaryBtnBox {
+  display: flex;
+  justify-content: center;
+
+}
+.secondaryBtnBox {
+  display: flex;
+  justify-content: center;
+
+}
+
+i {
+  margin: 4px;
+}
+
+.userData {
+  display: flex;
+}
+
+img {
+  margin: 2px 6px 2px -8px;
+  vertical-align: inherit;
+  height: 24px;
+  width: 24px;
+}
+
+.fbUser {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.secondaryNav {
+  display: flex;
+  justify-content: space-between;
+}

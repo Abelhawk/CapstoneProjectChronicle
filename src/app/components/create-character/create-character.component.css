@@ -1,0 +1,29 @@
+mat-form-field{
+  width: 100%;
+}
+
+.newCharacterForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.veryShort{
+  width: 150px;
+}
+
+.short{
+  /*width: 35%;*/
+}
+
+.long{
+  /*width: 90%;*/
+}
+
+.primaryBtn{
+  margin-top: 50px;
+}
+
+.secondaryBtn{
+  margin-top: 10px;
+}
+

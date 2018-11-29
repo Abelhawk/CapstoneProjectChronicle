@@ -1,0 +1,29 @@
+mat-form-field{
+  /*width: 100%;*/
+}
+
+.newStoryForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.veryShort{
+  /*width: 20%;*/
+}
+
+.short{
+  /*width: 35%;*/
+}
+
+.primaryBtn{
+  margin-top: 50px;
+  /*width: 15%;*/
+}
+.secondaryBtn{
+  /*width: 15%;*/
+  margin-top: 10px;
+}
+.randomBtn{
+  /*width: 20%;*/
+  margin-top: 10px;
+}

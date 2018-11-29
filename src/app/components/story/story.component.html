@@ -1,0 +1,16 @@
+<div class="details-container">
+    <h2>{{activeStory.title}}</h2>
+    <mat-card class="whiteDrop">
+    <ul class="scrolling">
+      <div class="messages"><li *ngFor="let message of plot" class="{{message.color}}">{{message.message}}</li></div>
+    </ul>
+  </mat-card>
+</div>
+<mat-card class="messageBox">
+  <mat-form-field class="messageField" appearance="legacy">
+    <!-- <textarea matInput [(ngModel)]="newMessage" (keyup.enter)="writeStory()"></textarea> -->
+    <textarea matInput [(ngModel)]="newMessage" (keyup.enter)="writeStory('player')"></textarea>
+  </mat-form-field>
+  <button class="addBtn" (click)="writeStory('player')">+</button>
+  <button class="addBtn2" (click)="writeStory('narrator')">+</button>
+</mat-card>
