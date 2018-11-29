@@ -5,7 +5,6 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { StoryListComponent } from './components/story-list/story-list.component';
 import { CharacterDetailComponent } from './components/character-detail/character-detail.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
-import { FriendsComponent } from './components/friends/friends.component';
 import { StoryComponent } from './components/story/story.component';
 import { CreateCharacterComponent } from './components/create-character/create-character.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
@@ -21,7 +20,6 @@ const appRoutes: Routes = [
   {path: 'create-character', component: CreateCharacterComponent},
   {path: 'inventory/:id', component: InventoryComponent, data: {title: 'Characters'}},
   {path: 'create-story', component: CreateStoryComponent},
-  {path: 'friends', component: FriendsComponent},
   {path: 'story/:id', component: StoryComponent},
   {path: 'story-list', component: StoryListComponent},
   {path: 'login', component: LoginComponent}

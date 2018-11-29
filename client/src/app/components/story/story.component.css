@@ -29,13 +29,13 @@ li{
 }
 
 .player, .addBtn{
-  background-color: #C8832B;
-  color: white;
+  background-color: #66a6c9;
+  color: black;
 }
 
 .narrator, .addBtn2{
-  background-color: #AEADFF;
-  color: black;
+  background-color: #775022;
+  color: white;
 }
 
 .scrolling {

@@ -1,0 +1,14 @@
+<mat-card>
+  <div *ngIf="auth.user | async; then authenticated else guest">
+  
+  </div>
+  
+  <ng-template #guest>
+    <h3>Welcome to RPG Chronicle!</h3>
+    
+    <p>To get started, click the button below. Make a character and a story, then play together with another player as narrator and player to make your own stories!</p>
+      <button class="primaryBtn" style="color: white;"mat-button routerLink="/dashboard" routerLinkActive="active">Let's Play!</button>
+    
+  </ng-template>
+
+</mat-card>

@@ -3,7 +3,7 @@ import { AngularFireList, AngularFireDatabase } from 'angularfire2/database';
 import { AuthService } from '../core/auth.service';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
-import { CharactersService } from './characters.service'; 
+import { CharactersService } from './characters.service';
 import { map } from 'rxjs/operators';
 
 interface Post{
@@ -22,14 +22,14 @@ export class MessagingService {
 
 
     postDoc: AngularFirestoreDocument<Post>;
-    post: Observable<Post>;  
+    post: Observable<Post>;
     postsCol: AngularFirestoreCollection<Post>
     posts: any;
     title: string;
     message: string;
     name: any;
     msgVal: string;
-    
+
 
 
   constructor(public afs: AngularFirestore, public auth: AuthService, public charactersService: CharactersService) {
@@ -61,11 +61,5 @@ export class MessagingService {
   deletePost(postId) {
     this.afs.doc('messages/'+postId).delete();
   }
-
-  // chatSend(theirMessage: string){
-  //   this.items.push({message: theirMessage, name: this.name.facebook.displayName});
-  //   this.msgVal = '';
-  // }
-
 
 }
